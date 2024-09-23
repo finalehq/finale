@@ -1,0 +1,9 @@
+{
+  "name": "@finale/documentation",
+  "scripts": {
+    "dev": "mintlify dev --port 3002"
+  },
+  "devDependencies": {
+    "mintlify": "^4.0.222"
+  }
+}

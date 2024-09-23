@@ -3,21 +3,21 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "packages/*",
+    "shared/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "app:dev": "npm run dev --workspace=@finale/app",
+    "app:build": "npm run build --workspace=@finale/app",
+    "app:preview": "npm run preview --workspace=@finale/app",
+    "app:lint": "npm run lint --workspace=@finale/app",
+    "docs:dev": "npm run dev --workspace=@finale/documentation",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.0.0",
-    "turbo": "latest"
+    "prettier": "^3.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
-  },
-  "packageManager": "npm@8.19.2"
+  }
 }

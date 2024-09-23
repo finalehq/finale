@@ -1,0 +1,14 @@
+*.log
+*.local
+.env
+.vercel
+.next
+build
+dist
+dist-ssr
+logs
+next-env.d.ts
+node_modules
+npm-debug.log*
+out
+package-lock.json
