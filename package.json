@@ -4,14 +4,14 @@
   "private": true,
   "workspaces": [
     "platforms/*",
-    "shared/*"
+    "packages/*"
   ],
   "scripts": {
-    "app:dev": "npm run dev --workspace=@finale/application",
-    "app:build": "npm run build --workspace=@finale/application",
-    "app:preview": "npm run preview --workspace=@finale/application",
-    "app:lint": "npm run lint --workspace=@finale/application",
-    "doc:dev": "npm run dev --workspace=@finale/documentation",
+    "app:dev": "npm run dev --workspace=@finale/app",
+    "app:build": "npm run build --workspace=@finale/app",
+    "app:preview": "npm run preview --workspace=@finale/app",
+    "app:lint": "npm run lint --workspace=@finale/app",
+    "docs:dev": "npm run dev --workspace=@finale/docs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
