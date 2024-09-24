@@ -1,5 +1,5 @@
 {
-  "name": "@finale/app-vite",
+  "name": "@finale/dashboard",
   "private": true,
   "version": "0.1.0",
   "type": "module",
