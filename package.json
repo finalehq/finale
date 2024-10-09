@@ -1,21 +1,15 @@
 {
   "name": "finale",
-  "version": "0.1.0",
   "private": true,
   "workspaces": [
+    "packages/*",
     "platforms/*",
-    "packages/*"
+    "tooling/*"
   ],
   "scripts": {
-    "dashboard:dev": "npm run dev --workspace=@finale/dashboard",
-    "dashboard:build": "npm run build --workspace=@finale/dashboard",
-    "dashboard:preview": "npm run preview --workspace=@finale/dashboard",
-    "dashboard:lint": "npm run lint --workspace=@finale/dashboard",
-    "docs:dev": "npm run dev --workspace=@finale/documentation",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "prettier": "^3.0.0"
+    "build": "npm run build",
+    "dev": "npm run dev",
+    "lint": "npm run lint"
   },
   "engines": {
     "node": ">=14.0.0"

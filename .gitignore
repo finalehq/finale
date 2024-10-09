@@ -1,14 +1,51 @@
-*.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# debug
+npm-debug.log*
+.pnpm-debug.log*
+
+# dependencies
+node_modules
+
+# env
 *.local
 .env
-.vercel
+
+# logs
+*.log
+logs
+
+# next.js
 .next
+next-env.d.ts
+out
+
+# npm
+.pnpm-debug.log*
+npm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+# production
 build
 dist
 dist-ssr
-logs
-next-env.d.ts
-node_modules
-npm-debug.log*
-out
-package-lock.json
+
+# react-email
+.react-email
+packages/email/public
+!packages/email/public/.gitkeep
+!packages/email/.react-email/.gitkeep
+
+# supabase
+.branches
+.temp
+
+# turbo
+.turbo
+
+# typescript
+*.tsbuildinfo
+
+# vercel
+.vercel

@@ -1,0 +1,3 @@
+{
+    "extends": "@finale/typescript/base.json"
+}
